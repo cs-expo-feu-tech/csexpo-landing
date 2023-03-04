@@ -5,87 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coming soon...</title>
-    <link rel="stylesheet" href="/fonts/stylesheet.css">
+    <title>CS EXPO 2023</title>
 
-    <style>
-        * {
-            font-family: 'Thedus Wide', 'Thedus', 'Impact';
-            font-size: 1.5rem;
-            color: white;
-            padding: 0;
-            margin: 0;
-        }
-
-        body {
-            background-color: #000;
-            height: 100vh;
-            width: 100vw;
-        }
-
-        .soon {
-            display: block;
-            position: absolute;
-            text-transform: uppercase;
-            bottom: 2rem;
-            left: 2rem;
-        }
-
-        .star {
-            position: absolute;
-            background-color: white;
-            border-radius: 50%;
-            animation: twinkle 1s infinite;
-        }
-
-        @keyframes twinkle {
-            0% {
-                opacity: 1;
-            }
-
-            50% {
-                opacity: 0.2;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-    </style>
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="soon">
-        <p>&#xE03C Coming soon...</p>
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v16.0"
+        nonce="ipVrA6GC"></script>
+
+    <div class="chain">
+        <img src="/res/chain.png" role="presentation" draggable="false">
     </div>
 
-    <!-- Create random stars -->
-    <script>
-        const body = document.querySelector('body');
-        const stars = 100;
+    <div class="csexpo-text">
+        <img src="/res/text_white_thin.svg" role="presentation" draggable="false">
+        <img src="/res/text_white_thin.svg" role="presentation" draggable="false">
+        <img src="/res/text_white_thin.svg" role="presentation" draggable="false">
+        <img src="/res/text_white_thin.svg" role="presentation" draggable="false">
+        <img src="/res/text_white_fill.svg" role="presentation" draggable="false">
+    </div>
 
-        // Create stars
-        let createStars = (element, starCount) => {
-            for (let i = 0; i < starCount; i++) {
-                const star = document.createElement('div');
-                star.classList.add('star');
-                star.style.left = Math.random() * 100 + 'vw';
-                star.style.top = Math.random() * 100 + 'vh';
-                star.style.animationDuration = Math.random() * 2 + 3 + 's';
-                star.style.width = Math.random() * 1 + 'px';
-                star.style.height = star.style.width;
-                star.style.opacity = Math.random();
-                element.appendChild(star);
-            }
-        }
+    <div class="video-container">
+        <div class="fb-video" data-width="1920" data-autoplay="true" data-href="https://www.facebook.com/csexpo2023/videos/3359230767664358/" data-show-text="false">
+            <blockquote cite="https://www.facebook.com/csexpo2023/videos/3359230767664358/" class="fb-xfbml-parse-ignore">
+                <a style="display: none;" role="none" href="https://www.facebook.com/csexpo2023/videos/3359230767664358/"></a>
+                <p style="display: none;" role="none">🕣 The clocks are going haywire. Everything is advancing too fast. What does this mean? 🕑
 
-        // Create stars on DOM load
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log("DOM loaded");
-            createStars(body, stars);    
-        });
-    </script>
+                    One of the most innovation-packed events of FEU Tech is coming back with a glimpse of the
+                    future! ✨
+
+                    Step into our world and experience computing marvels firsthand as technology brings out the
+                    brilliance of Computer Science students through a showcase of cutting-edge projects. 🧠🦾
+
+                    Coming this March 2023. Stay tuned. 👁‍🗨
+
+                    Animations and Visuals by: Daniel de Torrontegui
+                    Music Background by: Deniel Coronel
+                    Caption by: Christiana Sy
+
+                    #CSEXPO2023
+                    #CatalyzingChange
+                    #SystemApplications
+
+                    Source: &quot;Old Computers&quot; (https://skfb.ly/oyRvP) by Rafael Rodrigues is licensed under
+                    Creative Commons Attribution (http://creativecommons.org/licenses/by/4.0/).</p>Posted by <a
+                    href="https://www.facebook.com/csexpo2023">CS EXPO 2023</a> on Monday, February 6, 2023
+            </blockquote>
+        </div>
+        <a class="hyperbutton" href="https://facebook.com/CSExpo2023">CS EXPO 2023 Facebook Page</a>
+    </div>
+
 </body>
-
 </html>
